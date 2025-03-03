@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 1950px;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.info {
+  background-color: hsl(216, 50%, 16%);
+  width: 470px;
+  height: 810px;
+  border-radius: 20px;
+}
+
+img {
+  max-width: 100%;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.hover figure {
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 10px;
+}
+
+.hover figure img {
+  opacity: 1;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.hover figure:hover img {
+  opacity: 0.5;
+}
+
+h1 {
+  font-family: "Outfit";
+  color: hsl(0, 0%, 100%);
+  font-size: 30px;
+  font-weight: normal;
+  padding: 10px 10px 0px 35px;
+  transition: 1s;
+}
+
+h1:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+  font-family: "Outfit";
+  font-size: 20px;
+  padding: 0px 50px 0px 35px;
+  line-height: 1.7;
+}
+
+.flex-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+p.eth {
+  color: hsl(178, 100%, 50%);
+  font-family: "Outfit";
+  margin: 15px 0px 30px 5px;
+}
+
+p.days {
+  font-size: 17px;
+}
+
+img.icon {
+  max-width: 100%;
+  width: 15px;
+  float: left;
+  margin: 20px 20px 20px 0px;
+}
+
+img.clock {
+  width: 15px;
+}
+
+hr {
+  width: 380px;
+  border: 1px solid hsl(215, 32%, 27%);
+}
+
+.creator {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+img.pic {
+  width: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 15px 20px 0px 30px;
+}
+
+p.author {
+  margin: 30px 0px 0px -20px;
+}
+
+span {
+  color: white;
+  transition: 1s;
+}
+
+span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  color: white;
+  font-family: "Outfit";
+  margin-top: 50px;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .info {
+    width: 370px;
+    height: 700px;
+  }
+  p {
+    font-size: 15px;
+  }
+  hr {
+    width: 300px;
+  }
+  .attribution {
+    margin-bottom: 40px;
+  }
+}
